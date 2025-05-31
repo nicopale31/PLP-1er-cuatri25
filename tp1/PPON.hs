@@ -58,15 +58,15 @@ pponAdoc ppon = case ppon of
 {-
 
 Es recursión primitiva por que:
-
+    
     - Cada caso base se escribe combinando los parámetros que no son del tipo PPON.
     
     - El caso recursivo se escribe combinando los valores que no son del tipo PPON
       (en este caso los string s), y el llamado recursivo sobre los parámetros 
       que sí son del tipo PPON.
 
-    - Pero además , como "usamos" el parámetro del tipo PPON cuando hacemos 
-      pponObjetoSimple ppon, no podemos considerarla recursión estructural 
-      sino mas bien primitiva.
+    - la funcion accede a las subestructuras  en la llamada a funcion auxiliar 
+    (si se accede a las subestructuras entonces la recursion no es estructural)
+    y, por ende, la misma es primitiva.
 
 -}
