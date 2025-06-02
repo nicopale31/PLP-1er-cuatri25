@@ -68,5 +68,7 @@ Es recursión primitiva por que:
     - Sin embargo, la función accede a las sub-estructuras en la llamada de la función
       auxiliar `pponObjetoSimple` (si se accede a las sub-estructuras entonces la recursión 
       no es estructural) por ende la recursión es primitiva.
+    
+    - la recursion NO es global porque no se acceden a los resultados de recursiones anteriores
 
 -}
