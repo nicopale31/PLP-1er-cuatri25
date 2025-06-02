@@ -71,7 +71,7 @@ indentar i = foldDoc Vacio Texto (\j docAcumulado -> Linea (j+i) docAcumulado)
   - Por precondición del problema sabemos que i >= 0.
   - Cuando la función procese (\j docAcumulado -> Linea (j+i) docAcumulado) sabemos que:
     - j proviene del documento original que asumimos cumple el invariante, por lo tanto,
-      este también lo deberá cumplir y será un entero positivo.
+      este también lo deberá cumplir y será un entero mayor o igual a cero.
     - Luego al usar foldDoc sabemos que docAcumulado representa el resultado de procesar
       subdocumentos del documento original, por lo tanto docAcumulado también cumple
       el invariante.
